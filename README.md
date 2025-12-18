@@ -54,7 +54,7 @@ E' stata progettata espressamente sugli ingombri strutturali della carrozza per 
 ------------
 
 ## Video Presentazione del Progetto
-[![Video Presentazione](https://img.youtube.com/vi/FH-L03CD-zo/0.jpg)](http://www.youtube.com/watch?v=FH-L03CD-zo)
+[![Video Presentazione](https://img.youtube.com/vi/xxxxx/0.jpg)](http://www.youtube.com/watch?v=xxxxxx)
 
 ------------
 
