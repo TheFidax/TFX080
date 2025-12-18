@@ -84,8 +84,7 @@ I **File Gerber**, il **BOM** e il file **Pick and Place** sono nel file **.Zip*
 
 ## Caratteristiche della Scheda
 Di seguito sono riportate le caratteristiche della scheda, poi spiegate in dettaglio nei vari paragrafi dedicati.
-- [Ponte di Diodi Schottky](#ponte-di-diodi-schottky)
-- [Filtro Pi](#Filtro-Pi)  
+- [Ponte di Diodi Schottky](#ponte-di-diodi-schottky) 
 - [Chip Step Down Buck MCP16331](#chip-step-down-buck-mcp16331)
 - [Condensatori PowerPack](#condensatori-powerpack)
 - [Dcc Reader e Sistema ACK](#Dcc-reader-e-sistema-ack)
@@ -105,19 +104,8 @@ Di seguito sono riportate le caratteristiche della scheda, poi spiegate in detta
 ### Ponte di Diodi Schottky
 <img src="https://github.com/TheFidax/TFX080/blob/main/Images/rectifier.jpg" width="1280">
 
-Il circuito di alimentazione e' realizzato meadiante 4 diodi Schottky in configurazione [Ponte di Graetz](https://it.wikipedia.org/wiki/Raddrizzatore#Ponte_di_Graetz).</br>
-Tale configurazione permette di *raddrizzare* la tensione captata dalle prese di corrente in Conrente Continua a prescindere del sistema di alimentazione:
-- Corrente Continua Analogica (fornisce sempre gli stessi poli in uscita)
-- Corrente PWM (raddrizza l'onda quadra fornendo una tensione simil continua)
-- Corrente Alternata Analogica (raddrizza l'onda sinusoidale fornendo una tensione simil continua)
-- Digitale (raddrizza l'onda quadra fornendo una tensione simil continua)
-
-------------
-
-### Filtro Pi
-<img src="https://github.com/TheFidax/TFX080/blob/main/Images/pi_filter.jpg" width="1280">
-
-Quando e' attivo il *RailCom cutout* in aggiunta a particolari combinazioni di Alimentatori / Centrali Digitali e' possibile che il regolatore di tensione generi un ronzio anomalo, per prevenire un suo funzionamento non corretto dalla revisione Hardware 3.20a e' presente un [Filtro Pi](https://electronicsreference.com/analog/pi_filter/) di supporto prima del chip MCP16331.
+Il circuito di alimentazione e' realizzato mediante 4 diodi Schottky in configurazione [Ponte di Graetz](https://it.wikipedia.org/wiki/Raddrizzatore#Ponte_di_Graetz).</br>
+Tale configurazione permette di *raddrizzare* la tensione captata dalle prese di corrente in Corrente Continua a prescindere del sistema di alimentazione.
 
 ------------
 
@@ -131,10 +119,10 @@ L'alimentazione a 5 volt e' fornita dal chip [Microchip MCP16331](https://www.mi
 ### Condensatori PowerPack
 <img src="https://github.com/TheFidax/TFX080/blob/main/Images/powerpack.jpg" width="1280">
 
-Per sopperire a problemi di captazione di corrente e' previsto un sistema *powerpack* formato da 4 condensatori al Tantalio da 100uF con tensione **massima** di 35 volt.</br>
-I condensatori sono separati dal circuito di alimentazione da un Diodo ed un Resistore che rappresentano *il sistema di ricarica lenta*, come protezione dalle sovratensioni e' presente un diodo Zener da 27v.</br>
+Per sopperire a problemi di captazione di corrente e' previsto un sistema *powerpack* formato da 4 condensatori al Tantalio Polimerici da 100uF prodotti dalla Kemet.</br>
+I condensatori sono separati dal circuito di alimentazione da un Diodo ed un Resistore che rappresentano *il sistema di ricarica lenta*; la *tensione massima a cui possono essere caricati e' pari di 22v*, per garantire il margine di sicurezza raccomandato dal produttore.</br>
 
-Compatibilmente con lo spazio e' possibile aggiungere altri condensatori, *e' necessario che siano anche essi da 35v* per permettere il corretto funzionamento del sistema di protezione, tramite le piazzole ad essi dedicate.</br>
+Compatibilmente con lo spazio e' possibile aggiungere altri condensatori, *e' necessario che siano da almeno 25v* per garantire la sicurezza nel loro utilizzo, tramite le piazzole ad essi dedicate.</br>
 
 <img src="https://github.com/TheFidax/TFX080/blob/main/Images/external_powerpack.jpg" width="1280">
 
