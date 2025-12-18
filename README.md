@@ -93,6 +93,7 @@ Di seguito sono riportate le caratteristiche della scheda, poi spiegate in detta
 - [Porta di Programmazione ISP](#porta-di-programmazione-isp)
 - [Scompartimenti con Luci Diurne e Notturne *indipendenti*](#illuminazione-scompartimenti-con-luci-diurne-e-notturne)
 - [Ritirate](#illuminazione-ritirate)
+- [Corridoio](#illuminazione-corridoio)
 - [Luci di Coda Rosse](#luci-di-coda-rosse)
 - [Altoparlante](#altoparlante)
 - [Decoder PluX](#interfaccia-plux)
@@ -188,6 +189,13 @@ Ogni LED e' indipendente e puo' essere pilotato dal microcontrollore in maniera 
 <img src="https://github.com/TheFidax/TFX080/blob/main/Images/luci_ritirate.jpg" width="1280">
 
 La scheda e' progettata con LED per illuminare anche questi spazi, anche essi sono indipendenti. 
+
+------------
+
+### Illuminazione Corridoio
+<img src="https://github.com/TheFidax/TFX080/blob/main/Images/corridoio.jpg" width="1280">
+
+Il corridoio che percorre la carrozza e' illuminato mediante 15 led disposti in 5 segmenti da 3 led ognuno, ogni segmento è pilotato in maniera singola.</br>
 
 ------------
 
