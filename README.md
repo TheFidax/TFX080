@@ -119,7 +119,7 @@ L'alimentazione a 5 volt e' fornita dal chip [Microchip MCP16331](https://www.mi
 ### Condensatori PowerPack
 <img src="https://github.com/TheFidax/TFX080/blob/main/Images/powerpack.jpg" width="1280">
 
-Per sopperire a problemi di captazione di corrente e' previsto un sistema *powerpack* formato da 4 condensatori al Tantalio Polimerici da 100uF prodotti dalla [Kemet](https://www.mouser.it/ProductDetail/KEMET/T521D107M025ATE040?qs=Il0cmQ4mt8LtN6WSw%252BlCmw%3D%3D&srsltid=AfmBOopPXkVTst6PHS6XsViXScTIBU7AcOfAxkD29k2WPKTAUjJgBZi2).</br>
+Per sopperire a problemi di captazione di corrente e' previsto un sistema *powerpack* formato da 4 condensatori al Tantalio Polimerici da 100uF prodotti dalla Kemet.</br>
 I condensatori sono separati dal circuito di alimentazione da un Diodo ed un Resistore che rappresentano *il sistema di ricarica lenta*; la *tensione massima a cui possono essere caricati e' pari di 22v*, per garantire il margine di sicurezza raccomandato dal produttore.</br>
 
 Compatibilmente con lo spazio e' possibile aggiungere altri condensatori, *e' necessario che siano da almeno 25v* per garantire la sicurezza nel loro utilizzo, tramite le piazzole ad essi dedicate.</br>
